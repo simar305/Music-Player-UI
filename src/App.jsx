@@ -53,7 +53,7 @@ export default function App() {
     const q = query.toLowerCase();
     return list.filter(
       (s) =>
-        s.title?.toLowerCase().includes(q) ||
+        s.name?.toLowerCase().includes(q) ||
         s.artist?.toLowerCase().includes(q)
     );
   }, [songs, tab, query]);
